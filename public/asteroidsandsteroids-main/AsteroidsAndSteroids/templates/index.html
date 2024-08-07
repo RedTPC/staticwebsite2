@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Asteroids</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='asteroids.css') }}" />
+</head>
+
+
+<header>
+
+        <img src="../static/logo_final.png" id="logo">
+
+        <a href="{{ url_for('asteroids') }}">Play</a>
+        <a href="{{ url_for('about') }}">About</a>
+
+</header>
+<body>
+    <!-- <h1>Asteroids and Steroids</h1> -->
+    <p>You are a ripped astronaut junkie travelling through space</p>
+    <img src="../static/wasd.png" id="a">
+    <p>Keep yourself alive by gathering steroids with your turbo lasers</p>
+    <img src="../static/spacebar.jpg" id="a">
+    <p>But watch out! As you advance you will be met by increasingly powerful waves of <b style="color:red">asteroids</b> trying to seperate you from your TREN!</p>
+    <img src="../static/asteroid1.png" id="a">
+    <p>You can destroy asteroids with your turbo lasers, but only collecting your drugs will help you advance! through the <b style="color: green">5 unique levels!</b></p>
+    <img src="../static/steroid4.png" id="a">
+    <p>Touching an asteroid will cost you a heart, I've heard that losing all three is bad!</p>
+    <img src="../static/heart.jpg" id="a">
+    <p>As you journey through space you will find powerful tools</p>
+    <p>The <b style="color: blue">freeze</b> powerup will halt all asteroids in place, allowing you to line up your shots!</p>
+    <img src="../static/snowflake.png" id="a">
+    <p>The <b style="color: orange">burst</b> powerup will supercharge your burst powerup allowing you to clear out of space, this powerup is crucial in the later levels, so use them wisely! </p>
+    <img src="../static/burst.png" id="a">
+
+    <br>
+    <a href="{{ url_for('asteroids') }}">let's Go!</a>
+
+</body>
+
+
+
+</html>

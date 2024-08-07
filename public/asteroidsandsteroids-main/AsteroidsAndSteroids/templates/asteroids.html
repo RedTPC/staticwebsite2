@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Asteroids</title>
+    <!--
+    <link rel="stylesheet" href="asteroids.css" />
+    -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='asteroids.css') }}" />
+    <script src="{{ url_for('static', filename='asteroids.js') }}" type="module"></script>
+</head>
+
+<header>
+
+    <img src="../static/logo_final.png" id="logo">
+
+    <a href="{{ url_for('index') }}">Back to Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+
+</header>
+
+<body>
+    <p id="level"></p>
+    <canvas width="1024" height="640"></canvas>
+    <p id="outcome"></p>
+</body>
+
+</html>
